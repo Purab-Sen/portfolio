@@ -5,7 +5,7 @@ import ButtonGroup from "./ButtonGroup"
 const Image = ()=>{
     return(
         <div className="image">
-            <img src="../../images/profile.jpeg" />
+            <img src="../../public/images/profile.jpeg" />
         </div>
     )
 }
