@@ -5,6 +5,8 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   return (
     <>
@@ -15,6 +17,7 @@ const App = () => {
       <Education/>
       <Contact/>
       <Footer/>
+      <ToastContainer/>
     </>
   )
 }
