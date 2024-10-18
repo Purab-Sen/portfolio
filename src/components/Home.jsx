@@ -22,7 +22,7 @@ const Home = () => {
                 <span
                     className="txt-rotate"
                     data-period="400"
-                    data-rotate='[ "Hello, I am Purab."," Aspiring Software Developer.", "A Passionate Coder." ]'
+                    data-rotate='[ "Hi, I am Purab."," Aspiring Software Developer.", "A Passionate Coder." ]'
                 ></span>
             </Typography>
             <ButtonGroup />
