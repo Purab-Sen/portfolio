@@ -30,6 +30,7 @@ const Contact = () => {
             setText("");
             setProcess(false);
         }, (error) => {
+            console.log("Error: ",error)
             toast.error('Failed to send message, please try again.', {
                 style: { 
                     fontSize: '18px', 
