@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 
 const Contact = () => {
     const form = useRef();
+    console.log("hi");
     const [email,setEmail] = useState("");
     const [text,setText] = useState("");
     const[process,setProcess]=useState(false);
