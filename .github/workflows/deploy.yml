@@ -26,6 +26,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Set Environment Variables
+        run: |
+          echo "VITE_SID=${{ secrets.VITE_SID }}" >> $GITHUB_ENV
+          echo "VITE_TID=${{ secrets.VITE_TID }}" >> $GITHUB_ENV
+          echo "VITE_PID=${{ secrets.VITE_PID }}" >> $GITHUB_ENV
+
       - name: Build project
         run: npm run build
 
@@ -33,5 +39,3 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx gh-pages -d dist -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
-
-        
