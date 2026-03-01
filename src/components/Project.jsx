@@ -39,6 +39,19 @@ const myprojects =
             content:"A swing based application for fundraisers to get investments from investors by pitching their ideas and required funding. The project used java as the main language with mysql database to store data. Users can maintain make accounts as investors or fundraisers. Investors can view mulitple ideas and invest on the one they like. Similarly fundraisers can get investment from various investors and can accept from whom they prefer.",
             gitlink:"https://github.com/Purab-Sen/FundPropeller",
             image:"./images/fundpropeller.png"
+        },
+        {
+            title: "Youtube Summarizer Chrome Extension",
+            tools:
+            [
+                {
+                    icon:"fab fa-python",
+                    color: "black"
+                }
+            ],
+            content:"A RAG based Youtube Video Summarizer chrome extension built using langchain in python with an interactive chatbot features where user can ask about any query related to the youtube video. The LLM used in the project is powered by gemini. The assistant appears beside the currently running youtube video to guide you with solutions for your doubts. The transcripts are fetched using scrapingdog API.",
+            gitlink:"https://github.com/Purab-Sen/Youtube-Video-Summarizer-API",
+            image: "./images/yt_assistant.png"
         }
     ]
 const Project = () => {
